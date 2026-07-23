@@ -1,9 +1,0 @@
-{
-  "name": "GM NFT #1",
-  "description": "Daily GM on Base",
-  "image": "https://gm-with-nft.example.com/images/1.png",
-  "attributes": [
-    {"trait_type": "Type", "value": "Main NFT"},
-    {"trait_type": "GM Count", "value": "1"}
-  ]
-}
