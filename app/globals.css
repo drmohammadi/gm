@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100;
+  }
+  
+  .gm-button {
+    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  
+  .gm-button:hover {
+    transform: scale(1.08) rotate(3deg);
+    box-shadow: 0 0 60px rgba(239, 68, 68, 0.7);
+  }
+
+  .nft-card {
+    transition: all 0.3s ease;
+  }
+  
+  .nft-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgb(239 68 68 / 0.5);
+  }
+}
