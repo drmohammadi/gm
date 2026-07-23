@@ -1,11 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  images: {
-    domains: ['gm-with-nft.example.com'], // برای metadata NFT
+  
+  // مهم برای Vercel
+  experimental: {
+    turbo: {
+      // اگر Turbopack مشکل داره، این رو خاموش کن
+    }
   },
+
   webpack: (config) => {
-    config.resolve.fallback = { fs: false, net: false, tls: false };
+    config.resolve.fallback = { 
+      fs: false, 
+      net: false, 
+      tls: false 
+    };
     return config;
   },
 };
